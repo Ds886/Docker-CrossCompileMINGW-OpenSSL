@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+    buildssl:
+      build: ./image
+      volumes:
+        - ./release:/opt/rel
+      environment:
+        SSLVERSION: 1.1.1k
